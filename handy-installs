@@ -1,0 +1,3 @@
+#handy applications to install
+yum install net-tools
+yum install nano

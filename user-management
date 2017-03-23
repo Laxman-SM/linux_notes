@@ -1,0 +1,5 @@
+- adduser username (adds user)
+- passwd username (set password for specified user)
+- echo thepassword | passwd theusername —stdin (set password for user and pipe variable)
+- gpasswd -a username wheel (add user to group, wheel)
+- su - username  (switch user)

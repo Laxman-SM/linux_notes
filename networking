@@ -30,3 +30,10 @@ NAME=enp0s3
 UUID=802a6314-1fb5-4aa5-b3a1-0e26b355a921
 DEVICE=enp0s3
 ONBOOT=yes
+
+#DNS config
+/etc/resolv.conf
+
+#restart network services
+service network restart / systemctl restart network.service
+
