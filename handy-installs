@@ -1,3 +1,6 @@
-#handy applications to install
+#networking applications to install
 yum install net-tools
+yum install iproute
+
+#editors to install
 yum install nano

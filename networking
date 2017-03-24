@@ -15,6 +15,8 @@ BOOTPROTO=dhcp / static
 	IPADDR=192.168.2.155
 	NETMASK=255.255.255.0
 	GATEWAY=192.168.2.1
+	DNS1=192.168.2.12
+	DNS2=192.168.2.11
 DEFROUTE=yes
 PEERDNS=yes
 PEERROUTES=yes
@@ -29,11 +31,12 @@ IPV6_ADDR_GEN_MODE=stable-privacy
 NAME=enp0s3
 UUID=802a6314-1fb5-4aa5-b3a1-0e26b355a921
 DEVICE=enp0s3
-ONBOOT=yes
+	ONBOOT=yes
 
 #DNS config
 /etc/resolv.conf
+nameserver 8.8.8.8
+nameserver 8.8.4.4
 
 #restart network services
 service network restart / systemctl restart network.service
-
