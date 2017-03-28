@@ -1,2 +1,2 @@
-#firewall notes
-
+#turn on firewall
+	sudo systemctl start firewalld

@@ -1,5 +1,14 @@
-- adduser username (adds user)
-- passwd username (set password for specified user)
-- echo thepassword | passwd theusername —stdin (set password for user and pipe variable)
-- gpasswd -a username wheel (add user to group, wheel)
-- su - username  (switch user)
+#switch user
+	su - username 
+
+#add user
+	adduser username (adds user)
+
+#set password for user
+	passwd "username"
+
+#set password for user without prompts
+	echo thepassword | passwd "username" —stdin
+
+#add user to wheel group
+	gpasswd -a username wheel
