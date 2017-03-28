@@ -1,2 +1,19 @@
-#turn on firewall
+#turn on and enable firewall
 	sudo systemctl start firewalld
+	sudo systemctl enable firewalld
+
+#turn off and disable firewall
+	sudo systemctl stop firewalld
+	sudo systemctl disable firewalld
+
+#enable or disable a service on firewalld
+	sudo firewall-cmd --permanent --add-service="service-name"
+	sudo firewall-cmd --permanent --remove-service="service-name"
+
+#other common services
+	http(s)
+	ssh
+	smtp
+
+#add port of 4444 over tcp
+	sudo firewall-cmd --permanent --add-port=4444/tcp
