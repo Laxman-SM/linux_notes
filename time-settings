@@ -1,0 +1,16 @@
+#list time zones
+	sudo timedatectl list-timezones
+
+ #set tiemzone
+ 	sudo timedatectl set-timezone Europe/London
+
+ #check npt settings
+ 	sudo timedatectl
+
+ #swap file
+ 	sudo fallocate -l 4G /swapfile  #allocate 4gb to new file called swapfile
+ 	sudo chmod 600 /swapfile 		#restrict access to swapfile
+ 	sudo mkswap /swapfile			#format file for swap
+ 	sudo swapon /swapfile			#allow system to use swap file
+
+ 	sudo sh -c 'echo "/swapfile none swap sw 0 0" >> /etc/fstab'

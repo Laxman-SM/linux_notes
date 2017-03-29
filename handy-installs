@@ -1,6 +1,11 @@
 #networking applications to install
-yum install net-tools
-yum install iproute
+	yum install net-tools
+	yum install iproute
 
 #editors to install
-yum install nano
+	yum install nano
+
+#time services
+	yum install ntp
+	sudo systemctl start ntpd
+	sudo systemctl enable ntpd

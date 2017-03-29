@@ -12,3 +12,9 @@
 
 #add user to wheel group
 	gpasswd -a username wheel
+
+#list of users
+	/etc/passwd
+
+#list of passwords
+	/etc/shadow

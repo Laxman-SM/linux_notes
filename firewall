@@ -1,19 +1,54 @@
 #turn on and enable firewall
 	sudo systemctl start firewalld
 	sudo systemctl enable firewalld
+	sudo systemctl restart firewalld
 
 #turn off and disable firewall
 	sudo systemctl stop firewalld
 	sudo systemctl disable firewalld
 
-#enable or disable a service on firewalld
-	sudo firewall-cmd --permanent --add-service="service-name"
-	sudo firewall-cmd --permanent --remove-service="service-name"
+#view default firewall zone
+	sudo firewall-cmd --get-default-zone
 
-#other common services
-	http(s)
-	ssh
-	smtp
+#change the default zone
+	sudo firewall-cmd --set-default-zone=internal
 
-#add port of 4444 over tcp
-	sudo firewall-cmd --permanent --add-port=4444/tcp
+#view zones and associated interfaces
+	sudo firewall-cmd --get-active-zones
+
+#get all configuration for specific or all zones
+	sudo firewall-cmd --zone=public --list-all
+	sudo firewall-cmd --list-all-zones
+
+#enable or disable a service on firewalld and flag for runtime or persistent configuration
+	sudo firewall-cmd --zone=public --add-service=http --permanent
+	sudo firewall-cmd --zone=public --add-service=http
+	#replace add with "remove" to remove existing service
+
+	firewall-cmd --add-icmp-block=echo-reply
+	firewall-cmd --add-icmp-block=echo-request
+	firewall-cmd --remove-icmp-block=echo-reply
+	firewall-cmd --remove-icmp-block=echo-request
+
+#allow or disable port/protocol
+	sudo firewall-cmd --zone=public --add-port=12345/tcp --permanent
+	sudo firewall-cmd --zone=public --remove-port=12345/tcp --permanent
+
+
+#list exceptions that will be applied
+	sudo firewall-cmd --permanent --list-all
+
+#view status of firewall
+	sudo systemctl status firewalld
+	sudo firewall-cmd --state
+
+#reload configuration
+	sudo firewall-cmd --reload
+
+#firewalld configuration file locations
+	/usr/lib/firewalld
+	/etc/firewalld
+
+#list services that can be applied to firewalld
+	sudo firewall-cmd --get-services
+
