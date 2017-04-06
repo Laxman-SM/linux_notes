@@ -52,3 +52,14 @@
 #list services that can be applied to firewalld
 	sudo firewall-cmd --get-services
 
+#iptables
+	/etc/init.d/iptables save
+	/etc/init.d/iptables stop
+	/etc/init.d/iptables start
+
+#iptables on at boot
+	chkconfig iptables off-on
+
+#check iptables status
+	service iptables status
+	chkconfig --list iptables
