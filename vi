@@ -1,7 +1,0 @@
-#vi navigation
-
-#write file and quit
-:wq
-
-#ammend file
-:a

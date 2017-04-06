@@ -1,0 +1,15 @@
+#vi navigation
+
+#write file and quit
+:wq
+
+#ammend file
+:a
+
+#list all folders and permissions
+ls -la (add R to show all objects recursively)
+
+drwxr-xr-x   8 Darren  staff    272 23 Mar 09:59 dev & scripting
+
+d,rwx,rwx,rwx - Darren Staff - 272 - metadeta
+directory,owner,group,public - Owner Group - 272 - metadata
