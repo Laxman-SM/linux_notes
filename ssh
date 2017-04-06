@@ -1,0 +1,2 @@
+#interactive ssh login
+	ssh -i ~/.ssh/aws-dev.pem ec2-user@10.0.101.230
