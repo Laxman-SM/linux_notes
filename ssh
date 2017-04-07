@@ -3,4 +3,4 @@
 
 #turn on/off sshd
 	chkconfig sshd on-off
-
+	service sshd status
