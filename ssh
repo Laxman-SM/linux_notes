@@ -4,3 +4,12 @@
 #turn on/off sshd
 	chkconfig sshd on-off
 	service sshd status
+
+#configure ssh key logon
+	add user
+	change user password
+	create ~/.ssh directory and authorized_keys file
+	add public ssh key
+	change permissions to 700
+	modify /etc/ssh/sshd_config
+	uncomment rsa and pub auth lines

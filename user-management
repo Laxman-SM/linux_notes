@@ -18,3 +18,6 @@
 
 #list of passwords
 	/etc/shadow
+
+#sudoers file
+	/etc/sudoers
