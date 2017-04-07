@@ -1,0 +1,12 @@
+#init.d
+	/etc/init.d/service restart-stop-start
+
+	/etc/init.d/iptables save
+	/etc/init.d/iptables stop
+	/etc/init.d/iptables start
+
+#chec service status
+	service sshd status
+
+#start service at boot on/off
+	chkconfig iptables off-on

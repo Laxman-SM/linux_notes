@@ -57,7 +57,7 @@
 	/etc/init.d/iptables stop
 	/etc/init.d/iptables start
 
-#iptables on at boot
+#iptables on/off at boot
 	chkconfig iptables off-on
 
 #check iptables status

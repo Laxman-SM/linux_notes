@@ -1,3 +1,6 @@
+#yum check
+	yum provides ifconfig
+
 #networking applications to install
 	yum install net-tools
 	yum install iproute
