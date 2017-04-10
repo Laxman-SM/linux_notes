@@ -13,3 +13,10 @@ drwxr-xr-x   8 Darren  staff    272 23 Mar 09:59 dev & scripting
 
 d,rwx,rwx,rwx - Darren Staff - 272 - metadeta
 directory,owner,group,public - Owner Group - 272 - metadata
+
+777 rwxrwxrwx
+755 rwxr-xr-x
+700 rwx------
+666 rw-rw-rw-
+644 rw-r--r--
+600 rw-------
