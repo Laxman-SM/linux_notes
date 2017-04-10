@@ -21,3 +21,9 @@
 
 #sudoers file
 	/etc/sudoers
+
+#list of all groups
+	cut -d: -f1 /etc/group
+
+#list members of certain group
+	grep nginx /etc/group
