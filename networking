@@ -40,3 +40,6 @@ nameserver 8.8.4.4
 
 #restart network services
 service network restart / systemctl restart network.service
+
+#check open ports
+	netstat -tupln
