@@ -20,3 +20,27 @@ directory,owner,group,public - Owner Group - 272 - metadata
 666 rw-rw-rw-
 644 rw-r--r--
 600 rw-------
+
+rwx = 7
+rw- = 6
+r-x = 5
+r-- = 4
+
+#give group write permissions to all files in folder
+	sudo chmod g+w ./*.*
+#remove read permissions on all items in directory from owner	
+	sudo chmod -R o-r ./*
+
+o+w
+g-r
+
+#change permisions
+	chown -R nginx.nginx /var/www/worpress/
+
+	chmod -R 700 nginx.nginx /var/www/worpress/
+
+
+
+#delete directory
+	rmdir
+	rmdir -rf
