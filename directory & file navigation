@@ -9,6 +9,10 @@
 #list all folders and permissions
 ls -la (add R to show all objects recursively)
 
+#delete directory
+	rmdir
+	rmdir -rf
+
 drwxr-xr-x   8 Darren  staff    272 23 Mar 09:59 dev & scripting
 
 d,rwx,rwx,rwx - Darren Staff - 272 - metadeta
@@ -39,8 +43,5 @@ g-r
 
 	chmod -R 700 nginx.nginx /var/www/worpress/
 
-
-
-#delete directory
-	rmdir
-	rmdir -rf
+#copy to/from remote server
+	scp -r /Users/Darren/github/personal/nginx-wordpress/libertine.html  wpadmin@10.0.10.220:/var/www/wordpress
