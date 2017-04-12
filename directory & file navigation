@@ -30,18 +30,17 @@ rw- = 6
 r-x = 5
 r-- = 4
 
-#give group write permissions to all files in folder
+#specify permissions
+	chmod (u/g/o) (+/-/=) (r/w/x) /etc/etc/etc/file.png
+	modify (user/group/owner) (add/remove/only) (read/write/execute) /directory/file
+
+#give group write permissions to all files in folder ( u/g/o +/-/= r/w/x )
 	sudo chmod g+w ./*.*
 #remove read permissions on all items in directory from owner	
 	sudo chmod -R o-r ./*
 
-o+w
-g-r
-
-#change permisions
-	chown -R nginx.nginx /var/www/worpress/
-
-	chmod -R 700 nginx.nginx /var/www/worpress/
+#change owner and group
+	chown -R 700 nginx.nginx /var/www/worpress/
 
 #copy to/from remote server
 	scp -r /Users/Darren/github/personal/nginx-wordpress/libertine.html  wpadmin@10.0.10.220:/var/www/wordpress
