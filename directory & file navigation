@@ -44,3 +44,6 @@ r-- = 4
 
 #copy to/from remote server
 	scp -r /Users/Darren/github/personal/nginx-wordpress/libertine.html  wpadmin@10.0.10.220:/var/www/wordpress
+
+#rename file or move to new location
+	mv /path/to/folder/file /path/to/folder/newfilename
