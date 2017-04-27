@@ -47,3 +47,8 @@ r-- = 4
 
 #rename file or move to new location
 	mv /path/to/folder/file /path/to/folder/newfilename
+
+#check space
+	df
+	du
+	btrfs fi df /device/
