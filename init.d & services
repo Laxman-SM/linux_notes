@@ -20,3 +20,9 @@
 4	Undefined							Not used/User-definable
 5	X11									As runlevel 3 + display manager(X)
 6	Reboot								Reboots the system
+
+
+service --status-all
+service --status-all | more
+service --status-all | grep ntpd
+service --status-all | less

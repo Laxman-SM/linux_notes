@@ -29,6 +29,7 @@ rwx = 7
 rw- = 6
 r-x = 5
 r-- = 4
+--- = 0
 
 #specify permissions
 	chmod (u/g/o) (+/-/=) (r/w/x) /etc/etc/etc/file.png
